@@ -1,0 +1,496 @@
+/*COMMON*/
+
+/*HEADER*/
+
+header {
+	height: 160px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-rows: 100px 60px;
+	gap: 0px 1px;
+	grid-template-areas: 
+		"l l l p c"
+		"s s s s s";
+}
+
+#h1-logo, #login, #carrello {
+	height: 100px;
+}
+
+#search-bar-form {
+	height: 60px;
+}
+
+/*MENU*/
+
+#menu {
+	display: block;
+}
+
+#a-vedi-tutti {
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#catalogo-selezionato {
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#categorie {
+	margin-top: 1px;
+	width: 100%;
+	margin-left: 1px;
+	border-right: 1px solid black;
+}
+
+/*MENU*/
+
+/*HEADER*/
+
+/*FOOTER*/
+
+footer {
+	grid-template-areas: 
+	"a a" 
+	"b b" 
+	"c d";
+}
+
+footer * {
+	margin-top: .7em;
+}
+
+footer #email {
+	grid-area: a;
+}
+
+footer #phone {
+	grid-area: b;
+}
+
+footer #imgHTML {
+	grid-area: c;	
+}
+
+footer #imgCSS {
+	grid-area: d;	
+}
+
+footer #imgCSS, #imgHTML {
+	margin-bottom: .7em;
+}
+
+/*FOOTER*/
+
+/*COMMON*/
+
+
+/*INDEX*/
+
+.index-arrow-container {
+	width: 100%;
+}
+
+.index-h2{
+	padding-left: 0em;
+	text-align: center;
+}
+
+/*INDEX*/
+
+
+/*ELENCO ARTICOLI*/
+
+#ea-torna-su {
+	width: 100%;
+	text-align: center;
+}
+
+/*FILTER*/
+
+#filter {
+	margin-top: 5px;
+}
+
+#filter-container {
+	width: 100%;
+	float: none;
+	border-bottom: 1px solid black;
+	border-right: none;
+	height: fit-content;
+	overflow: hidden;
+	padding: 2%;
+}
+
+#button-filter {
+	display: block;
+}
+
+/*RECENSIONI CLIENTI*/
+
+#li-recensioni-clienti {
+	float: left;
+	display: block;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+.e-piu {
+	font-size: 1em;
+}
+
+/*RECENSIONI CLIENTI*/
+
+/*OFFERTE & UTLIMI ARRIVI*/
+
+#li-offerte, #li-ultimi-arrivi {
+	display: block;
+}
+
+#li-offerte {
+	margin-top: 0px;
+}
+
+/*OFFERTE & UTLIMI ARRIVI*/
+
+/*FILTER*/
+
+/*RESULTS % ORDER BY*/
+
+#results-get-query {
+	clear: both;
+}
+
+/*RESULTS & ORDER BY*/
+
+/*PRODUCTS*/
+
+.product-card {
+	max-width: 100%;
+}
+
+/*PRODUCTS*/
+
+/*PAGINE*/
+
+#carica-altri {
+	clear: both;
+	width: 100%;
+}
+
+#h1-ordini {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 0;
+}
+
+/*PAGINE*/
+
+/*ELENCO ARTICOLI*/
+
+
+/*CARRELLO*/
+
+
+#carrello_content li h2 {
+	width: 100%;
+	text-align: center;
+}
+
+#carrello_content h1{
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 0px;
+}
+
+#carrello_list li{
+	display: block;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#carrello_list h2{
+	font-size: 1.8em;
+	margin-top: 15px;
+}
+
+.img_wrapper_c {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.selectQuantita{
+	justify-self: center;
+	max-width: 6em;
+}
+.carrello_price{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.carrello_trash{
+	margin-top: 1em;
+}
+
+.carrello_imgtrash{	
+	max-height: 3em;
+	max-width: 3em;	
+}
+
+.carrello_price{
+	font-size: 1.5em;
+}
+
+/*CARRELLO*/
+
+
+/*ARTICOLO*/
+
+#price_as{
+	margin-bottom: 20px;
+}
+
+#articolo_as{
+	display: block;
+	text-align: center;
+	padding-bottom: 1.3em;
+	height: 570px;
+}
+
+#div_description_as{
+	text-align: justify;
+	padding-top: 1em;
+}
+
+#comment_form_as {
+	grid-template-areas:
+				"a a a"
+				"b b b"		
+				"c c  j"
+				"d id j"
+				"e ie j"
+				"f if j"
+				"g ig j"
+				"h ih j"
+				"i ii j";
+}
+
+#img_wrapper_as{
+	height: 250px;
+	width: 250px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#div_description_as img{
+	padding-bottom: .5em;
+}
+
+#comment_section_as{
+	padding: 0.5em;
+}
+
+#post_as{	
+	padding: 1em;
+	display: block;
+	text-align: center;
+}
+
+#vote_form_as{
+	text-align: center;
+	column-gap: 0.5em;
+}
+
+#vote_form_as input{
+	justify-self: right;
+}
+
+#vote_form_as label{
+	margin-left: 1.5em;
+	justify-self: left;
+}
+
+#vote_form_as{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#input_comment_as{
+	min-height: 10em;
+	width: 80%;
+}
+
+#allComments_as article{
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+				"a c"
+				"b d"
+				"e e";
+}
+
+#div_description_as label{
+	padding-bottom: 0;
+}
+
+#vote_form_as{
+	margin-bottom: .5em;
+}
+
+#load_more_as{
+	width: 35%;
+}
+
+/*ARTICOLO*/
+
+
+/*CREA-MODIFICA ARTICOLO*/
+
+#cma-main{
+	margin-left: 0em;
+	min-height: 0em;	
+	border: none;
+}
+
+#cma-menu-laterale{
+	width: 100%;
+	
+	margin-bottom: 1.5em;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+#cma-main {
+
+	min-width: 100%;
+	border-radius: .3em;
+	margin-bottom: 1em;
+}
+
+/*CREA-MODIFICA ARTICOLO*/
+
+
+/*AMMINISTRATORE ACCOUNT*/
+
+#content_aa{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+
+#menu-laterale_aa{
+	text-align: center;	
+}
+
+#menu-laterale_aa ul li{
+	padding: .5em .5em;
+	border-bottom: 1px solid #000;	
+	font-size: 1.2em;
+}
+
+#menu-laterale_aa #logout_button_aa{
+	border: none;
+}
+
+#main_aa{
+	margin: auto;
+	border: none;
+	padding: 0;
+}
+
+#main_aa #l-username_aa{
+	margin-top: 0.2em;
+}
+
+#button-save_aa{
+	margin: 1.9em auto 2em;
+}
+
+/*AMMINISTRATORE ACCOUNT*/
+
+
+/*ORDINI UTENTE*/
+
+#ordini_content{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+
+.h3_ou {
+	width: 100%;
+	text-align: center;
+}
+
+#ordini_menu_laterale{
+	text-align: center;
+}
+
+#ordini_menu_laterale ul li{
+	border-bottom: 1px solid #000;	
+	font-size: 1.2em;
+}
+
+.ordini_totale{
+	text-align: center;
+}
+
+/*ORDINI UTENTE*/
+
+
+/*DATI PERSONALI*/
+
+#content_dp{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+
+#ordini_menu_laterale_dp{
+	text-align: center;
+}
+
+#ordini_menu_laterale_dp ul li{
+	padding: .5em .5em;
+	border-bottom: 1px solid #000;	
+	font-size: 1.2em;
+}
+
+.ordini_totale{
+	margin: auto;
+}
+
+#main_dp form{
+	margin-bottom: 20px;
+}
+
+#content_dp #menu ul{	
+	width: 11.6em;
+}
+
+#content_dp #menu ul li{	
+	font-size: 1.09em;
+	padding: .7em 1.5em;
+	text-align: center;	
+}
+
+#main_dp{
+	width: 100%;
+	margin: auto;
+	border: none;
+	padding: 0;
+}
+
+#main_dp #l-username_dp{
+	margin-top: 0.2em;
+}
+
+#button-save_dp{
+	margin: 1.9em auto 2em;
+}
+
+/*DATI PERSONALI*/

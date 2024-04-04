@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="world of games, ultimi arrivi, sconti" />
+        <meta name="description" content="Acquista giochi, console e accessori a prezzi scontati. Giochi per Ps5, XBoX Series X e Nintendo Switch." />
+        <meta name="author" content="Giacomo Romano, Daniele Trentin, Davide Spada, Dmitry Pluzhnikov"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width:740px), only screen and (max-width:740px)" href="css/style-mini.css"/>
+        <link rel="stylesheet" type="text/css" media="print" href="css/style-print.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="images/tab-icon.ico"/>
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="onLoadHome();">
+        <div>
+            <a class="navigationHelp" href="#index-content" tabindex="1">Vai al contenuto della home</a>
+        </div>
+        <header>
+            <h1 id="h1-logo">
+                <span id="title-for-printing" lang="en">World Of Games</span>
+                <span id="a-logo"></span>
+            </h1>
+            <form id="search-bar-form" method="get" action="elenco-articoli.php">
+                <label for="search-bar" id="label-for-search-bar">Cerca:</label>
+                <input type="search" id="search-bar" name="termine-ricerca" required aria-required="true" title="Il termine di ricerca non può essere vuoto e può contenere solo lettere, numeri, spazi e apostrofi, e non può iniziare nè con uno spazio nè con un'apostrofo" minlength="1" maxlength="100" tabindex="2" autocomplete="off"/>
+                <button type="submit" id="button-search" tabindex="3" value="cerca">Cerca</button>
+            </form>
+            %header%
+        </header>
+
+        <nav id="menu" aria-label="Menu di navigazione">
+            <a id="a-vedi-tutti" class="first-level-menu-item" href="elenco-articoli.php" tabindex="4">Catalogo</a>
+            <ul id="categorie" role="menubar">
+                <li id="li-console" class="first-level-menu-item has-submenu" tabindex="5" lang="en" role="menuitem">
+                    Console
+                    <ul id="ul-console" class="sub-menu" role="menu">
+                        <li role="menuitem"><a id="a-console-playstation" href="elenco-articoli.php?categoria=Console&amp;sottocategoria=Playstation" lang="en" tabindex="6">Playstation</a></li>
+                        <li role="menuitem"><a id="a-console-nintendo" href="elenco-articoli.php?categoria=Console&amp;sottocategoria=Nintendo" tabindex="7">Nintendo</a></li>
+                        <li role="menuitem"><a id="a-console-xbox" href="elenco-articoli.php?categoria=Console&amp;sottocategoria=Xbox" tabindex="8" lang="en">Xbox</a></li>
+                        <li role="menuitem"><a id="a-console-tutti" href="elenco-articoli.php?categoria=Console&amp;sottocategoria=Tutti" tabindex="9">Tutte le console</a></li>
+                    </ul>
+                </li>
+                <li id="li-giochi" class="first-level-menu-item has-submenu" tabindex="10" role="menuitem">
+                    Giochi
+                    <ul id="ul-giochi" class="sub-menu" role="menu">
+                        <li role="menuitem"><a id="a-giochi-sparatutto" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Sparatutto" lang="en" tabindex="11">Sparatutto</a></li>
+                        <li role="menuitem"><a id="a-giochi-avventura" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Avventura" tabindex="12">Avventura</a></li>
+                        <li role="menuitem"><a id="a-giochi-platform" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Platform" tabindex="13" lang="en">Platform</a></li>
+                        <li role="menuitem"><a id="a-giochi-azione" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Azione" tabindex="14">Azione</a></li>
+                        <li role="menuitem"><a id="a-giochi-sportivi" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Sportivi" tabindex="15">Sportivi</a></li>
+                        <li role="menuitem"><a id="a-giochi-corse" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Corse" tabindex="16">Corse</a></li>
+                        <li role="menuitem"><a id="a-giochi-horror" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Horror" tabindex="17">Horror</a></li>
+                        <li role="menuitem"><a id="a-giochi-openworld" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Open+World" tabindex="18" lang="en">Open World</a></li>
+                        <li role="menuitem"><a id="a-giochi-tutti" href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Tutti" tabindex="19">Tutti i giochi</a></li>
+                    </ul>
+                </li>
+                <li id="li-controller" class="first-level-menu-item has-submenu" lang="en" tabindex="20" role="menuitem">Controller
+                    <ul id="ul-controller" class="sub-menu" role="menu">
+                        <li role="menuitem"><a id="a-controller-playstation" href="elenco-articoli.php?categoria=Controller&amp;sottocategoria=Playstation" lang="en" tabindex="21">Playstation</a></li>
+                        <li role="menuitem"><a id="a-controller-nintendo" href="elenco-articoli.php?categoria=Controller&amp;sottocategoria=Nintendo" tabindex="22">Nintendo</a></li>
+                        <li role="menuitem"><a id="a-controller-xbox" href="elenco-articoli.php?categoria=Controller&amp;sottocategoria=Xbox" lang="en" tabindex="23">Xbox</a></li>
+                        <li role="menuitem"><a id="a-controller-pc" href="elenco-articoli.php?categoria=Controller&amp;sottocategoria=Pc" tabindex="24">Pc</a></li>
+                        <li role="menuitem"><a id="a-controller-tutti" href="elenco-articoli.php?categoria=Controller&amp;sottocategoria=Tutti" tabindex="25">Tutti i controller</a></li>
+                    </ul>
+                </li>
+                <li id="li-accessori" class="first-level-menu-item has-submenu" tabindex="26" role="menuitem">
+                    Accessori
+                    <ul id="ul-accessori" class="sub-menu" role="menu">
+                        <li role="menuitem"><a id="a-accessori-cuffie" href="elenco-articoli.php?categoria=Accessori&amp;sottocategoria=Cuffie" tabindex="27">Cuffie</a></li>
+                        <li role="menuitem"><a id="a-accessori-microfono" href="elenco-articoli.php?categoria=Accessori&amp;sottocategoria=Microfono" lang="en" tabindex="28">Microfono</a></li>
+                        <li role="menuitem"><a id="a-accessori-tastiera" href="elenco-articoli.php?categoria=Accessori&amp;sottocategoria=Tastiera" lang="en" tabindex="29">Tastiera</a></li>
+                        <li role="menuitem"><a id="a-accessori-mouse" href="elenco-articoli.php?categoria=Accessori&amp;sottocategoria=Mouse" lang="en" tabindex="30">Mouse</a></li>
+                        <li role="menuitem"><a id="a-accessori-tutti" href="elenco-articoli.php?categoria=Accessori&amp;sottocategoria=Tutti" tabindex="31">Tutti gli accessori</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="breadcrumb" aria-label="Percorso di navigazione">
+            <p>Ti trovi in: Home</p>
+        </nav>
+
+        %status-bar%
+    
+        <main id="index-content" tabindex="-1">
+            <h2 class="index-h2">Gli ultimi giochi arrivati</h2>
+            <div class="index-slider">
+                %ultimi-arrivi%
+                <div class="index-arrow-container">
+                    <a href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Tutti&amp;filtra-ultimi-arrivi=true" id="link-to-latest-arrivals"><img src="images/arrow.png" alt="Vedi tutti gli ultimi giochi arrivati" class="index-arrow"></a>
+                </div>
+            </div>
+
+            <h2 class="index-h2">I giochi in offerta</h2>
+            <div class="index-slider">
+                %offerta%
+                <div class="index-arrow-container">
+                    <a href="elenco-articoli.php?categoria=Giochi&amp;sottocategoria=Tutti&amp;filtra-offerte=true"><img src="images/arrow.png" alt="Vedi tutti i giochi in offerta" class="index-arrow"></a>
+                </div>
+            </div>
+            <a id="index-torna-su" href="#index-content">Torna su</a>
+        </main>
+
+        <footer>
+            <p id="email" lang="en"><strong>Email</strong>: world_of_games<span lang="it">@</span>gmail<span lang="it">.</span>com</p>
+            <p id="phone"><strong>Telefono</strong>: +1234567890</p>
+            <img id="imgHTML" src="images/vhtml5.png" alt="html valido"/>
+            <img id="imgCSS" src="images/vcss.png" alt="css valido"/>
+        </footer>
+    </body>
+</html>

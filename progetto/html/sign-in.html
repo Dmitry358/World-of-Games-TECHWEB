@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <title>Registrati</title>
+    <meta name="keywords" content="world of games, registrati, username, email, password, nome, cognome, cellulare, indirizzo"/>
+    <meta name="description" content="Registrati al sito World Of Games!"/>
+    <meta name="author" content="Giacomo Romano, Daniele Trentin, Davide Spada, Dmitry Pluzhnikov"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login-sign-in.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/login-sign-in-print.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tab-icon.ico"/>
+    <script src="js/script.js"></script>
+</head>
+<body onload="initSignIn();">
+
+    <div>
+        <a class="navigationHelp" href="#content">Vai al form di registrazione</a>
+    </div>
+
+    <header>
+         <h1 id="header-h1-logo">
+            <span id="title-for-printing" lang="en">World Of Games</span>
+            <a href="index.php" id="header-a-logo" aria-label="Vai alla Home"></a>
+        </h1>
+    </header>
+
+    <nav id="breadcrumb">
+        <p>Ti trovi in: <a href="index.php" lang="en">Home</a> &gt;&gt; <a href="login.php" lang="en">Login</a> &gt;&gt; Registrati</p>
+    </nav>
+
+    <main id="content" tabindex="-1">
+        %message%
+        <form id="form-sign-in" action="sign-in.php" method="post">
+            <fieldset id="fieldset-autenticazione">
+                <legend>Autenticazione</legend>
+                <label for="username"><span lang="en">Username</span>*%username-occupato%</label>
+                <input type="text" placeholder="Inserisci l'username" id="username" name="username" required aria-required="true" autocomplete="off" pattern="^[A-Za-z]{1}\w{4,19}$" title="L'username deve essere lungo almeno 5 caratteri e massimo 20, può contenere solo lettere e numeri, deve iniziare con una lettera" minlength="5" maxlength="20" value="%valoreUsername%">
+
+                <label for="password"><span lang="en">Password</span>*</label>
+                <input type="%tipoPswInput%" placeholder="Inserisci la password" id="password" name="password" required aria-required="true" autocomplete="off" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$!?&])[\w$!?&]{8,30}$" title="La password deve essere lunga almeno 8 caratteri e massimo 30, può contenere solo lettere e numeri, deve contenere almeno un numero, almeno una lettera e almeno un carattere speciale tra $ ! ? &" minlength="8" maxlength="30" value="%valorePassword%">
+
+                <input id="mostra-password" name="mostra-password" type="checkbox"%valoreCheckedShowPsw%>
+                <label id="label-mostra-password" for="mostra-password">Mostra <span lang="en">password</span></label>
+
+                <label for="confirm-password" id="label-confirm-password">Conferma <span lang="en">password</span>*</label>
+                <input type="%tipoConfPswInput%" placeholder="Inserisci di nuovo la password" id="confirm-password" name="confirm-password" required aria-required="true" autocomplete="off" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$!?&])[\w$!?&]{8,30}$" title="La password deve essere lunga almeno 8 caratteri e massimo 30, può contenere solo lettere e numeri, deve contenere almeno un numero, almeno una lettera e almeno un carattere speciale tra $ ! ? &" minlength="8" maxlength="30" value="%valoreConfPassword%">
+
+                <input id="mostra-confirm-password" name="mostra-confirm-password" type="checkbox"%valoreCheckedShowConfPsw%>
+                <label id="label-mostra-confirm-password" for="mostra-confirm-password">Mostra conferma della <span lang="en">password</span></label>
+            </fieldset>
+
+            <fieldset id="fieldset-dati-personali">
+                <legend>Dati personali</legend>
+                <label for="email"><span lang="en">Email</span>*%email-occupata%<!--<strong id="email-occupata">Email già in uso</strong>--></label>
+                <input type="email" placeholder="Inserisci l'email" id="email" name="email" title="La email deve essere lunga almeno 7 caratteri e massimo 50" required aria-required="true" autocomplete="off" minlength="7" maxlength="50" value="%valoreEmail%">
+                <label for="nome">Nome*</label>
+                <input type="text" placeholder="Inserisci il nome" id="nome" name="nome" required aria-required="true" autocomplete="off" pattern="^[A-Za-zàèùòèìé]{1}[A-Za-zàèùòèìé'\s]{1,39}$" title="Il nome deve essere lungo almeno 2 caratteri e massimo 40, può contenere solo lettere, spazi e apostrofi, e deve iniziare con una lettera" minlength="2" maxlength="40" value="%valoreNome%">
+                
+                <label for="cognome">Cognome*</label>
+                <input type="text" placeholder="Inserisci il cognome" id="cognome" name="cognome" required aria-required="true" autocomplete="off" pattern="^[A-Za-zàèùòèìé]{1}[A-Za-zàèùòèìé'\s]{1,39}$" title="Il cognome deve essere lungo almeno 2 caratteri e massimo 40, può contenere solo lettere, spazi e apostrofi, e deve iniziare con una lettera" minlength="2" maxlength="40" value="%valoreCognome%">
+
+                <label for="cellulare">Cellulare*</label>
+                <input type="tel" placeholder="Inserisci il cellulare" id="cellulare" name="cellulare" required aria-required="true" autocomplete="off" pattern="^\d{9,10}$" title="Il cellulare può essere 9 o 10 caratteri e può contenere solo numeri" minlength="9" maxlength="10" value="%valoreCellulare%">
+
+                <label for="indirizzo">Indirizzo*</label>
+                <input type="text" placeholder="Inserisci l'indirizzo" id="indirizzo" name="indirizzo" required aria-required="true" autocomplete="off" pattern="^[A-Za-zàèùòèìé]{1}[A-Za-zàèùòèìé'\s\d]{4,60}$" title="L'indirizzo deve essere lungo almeno 5 caratteri e massimo 60, può contenere solo lettere, numeri e spazi, e deve iniziare con una lettera" minlength="5" maxlength="60" value="%valoreIndirizzo%">
+            </fieldset>
+
+            <p id="p-campo-obbligatorio" tabindex="0">* Indica un campo obbligatorio</p>
+            <button type="submit" name="sign-in" value="registrati">Registrati</button>
+    </form>
+    </main>
+
+    <footer>
+        <p><strong>Telefono</strong>: +1234567890</p>
+        <p id="footer-email" lang="en"><strong>Email</strong>: world_of_games<span lang="it">@</span>gmail<span lang="it">.</span>com</p>
+        <img class="imgValidCode" src="images/vhtml5.png" alt="html valido"/>
+        <img class="imgValidCode" src="images/vcss.png" alt="css valido"/>
+    </footer>
+</body>
+</html>

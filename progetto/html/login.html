@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="world of games, login, username, email, password, registrati"/>
+    <meta name="description" content="Effettua il login al sito World Of Games!"/>
+    <meta name="author" content="Giacomo Romano, Daniele Trentin, Davide Spada, Dmitry Pluzhnikov"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login-sign-in.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/login-sign-in-print.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tab-icon.ico"/>
+    <script src="js/script.js"></script>
+</head>
+<body onload="initLogin();">
+
+    <div>
+        <a class="navigationHelp" href="#content">Vai al form di <span lang="en">login</span></a>
+    </div>
+
+    <header>
+         <h1 id="header-h1-logo">
+            <span id="title-for-printing" lang="en">World Of Games</span>
+            <a href="index.php" id="header-a-logo" aria-label="Vai alla Home"></a>
+        </h1>
+    </header>
+
+    <nav id="breadcrumb">
+        <p>Ti trovi in: <a href="index.php" lang="en">Home</a> &gt;&gt; <span lang="en">Login</span></p>
+    </nav>
+
+    <main id="content" tabindex="-1">
+        %message%
+        <form id="form-login" action="login.php" method="post">
+            <fieldset id="fieldset-autenticazione">
+                <legend>Autenticazione</legend>
+                <label for="username-or-email"><span lang="en">Username</span>/<span lang="en">Email</span>*</label>
+                <input type="text" placeholder="Inserisci l'username o l'email" id="username-or-email" name="username-or-email" required aria-required="true" autocomplete="off" pattern=".*\S+.*" title="Questo campo non può essere vuoto e può essere lungo al massimo 100 caratteri" maxlength="100" value="%valoreUsernameOEmail%">
+
+                <label for="password"><span lang="en">Password</span>*</label>
+                <input type="%tipoPswInput%" placeholder="Inserisci la password" id="password" name="password" required aria-required="true" autocomplete="off" pattern=".*\S+.*" title="Questo campo non può essere vuoto e può essere lungo al massimo 100 caratteri" maxlength="100" value="%valorePassword%">
+                
+                <input id="mostra-password" name="mostra-password" type="checkbox"%valoreCheckedShowPsw%>
+                <label id="label-mostra-password" for="mostra-password">Mostra <span lang="en">password</span></label>
+            </fieldset>
+
+            <p id="p-campo-obbligatorio">* Indica un campo obbligatorio</p>
+            <button type="submit" id="button-login" name="login" lang="en" value="login"><span lang="en">Login</span></button>
+        </form>
+        <a href="sign-in.php" id="not-signed-yet">Non sei ancora registrato? Registrati</a>
+    </main>
+    <footer>
+        <p><strong>Telefono</strong>: +1234567890</p>
+        <p id="footer-email" lang="en"><strong>Email</strong>: world_of_games<span lang="it">@</span>gmail<span lang="it">.</span>com</p>
+        <img class="imgValidCode" src="images/vhtml5.png" alt="html valido"/>
+        <img class="imgValidCode" src="images/vcss.png" alt="css valido"/>
+    </footer>
+</body>
+</html>

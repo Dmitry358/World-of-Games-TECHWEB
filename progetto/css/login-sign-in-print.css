@@ -1,0 +1,49 @@
+html, body {
+	font-family: "Times New Roman", "Times", serif;
+	font-size: 12pt;
+}
+
+#title-for-printing {
+	position: relative;
+	display: block;
+	height: inherit;
+	right: 0em;
+	margin-top: 20px;
+}
+
+#header-a-logo {
+	height: 0px;
+	outline: none;
+}
+
+#breadcrumb a {
+	color: black;
+}
+
+#not-signed-yet {
+	color: black;
+}
+
+footer {
+	display: none;
+}
+
+button {
+  border-color: black;
+}
+
+input:invalid {
+	border-color: black;
+}
+
+input:valid {
+	border-color: black;
+}
+
+#credenziali-non-corrette {
+	color: black;
+}
+
+#username-occupato, #email-occupata{
+	color: black;
+}
